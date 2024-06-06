@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+ 
+ <!--* Contact Section start -->
+ <section id="contact" class="contact-section">
+    <div class="section-background m-bg-hide">
+        <div class="background-wrapper bicycle-img">
+            <div class="background-inner" style="background-image:  url('{% static 'images/scooty12.jpg' %}'); background-repeat: no-repeat;background-position: bottom;background-size: cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container py-lg-5 bicycle-img">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-wrapper">
+                    <h2 style="margin-top: 30px;" class="large-heading text-uppercase">Say Hi !!</h2>
+                    <h4 class="fw-300">Fill the Gap and We Will Contact You Soon</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-12">
+                <div class="form-wrapper">
+                    <form method="post" action="{% url 'contact' %}" style="position: relative;">
+                        {% csrf_token %}
+
+                        <div class="form-row">
+                            <div class="form-group col-lg-6 col-sm-6">
+                                <input name="name" type="text" class="form-control" id="inputYourName" placeholder="Your Name">
+                            </div>
+                            <div class="form-group col-lg-6 col-sm-6">
+                                <input name="email" type="email" class="form-control" id="inputYourEmail" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-12">
+                                <textarea name="question" class="form-control" id="inputYourQuestion" placeholder="Your Question"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-12 d-flex justify-content-end">
+                                <input type="submit" value="Send" class="btn btn-primary border-btn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--* Contact Section End -->
+
+{%endblock%}

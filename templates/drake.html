@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+
+<!-- * Variation Section Start -->
+<section id="variation" class="color-section bus-layout" style="position: relative;">
+    <div class="section-background">
+        <div class="background-wrapper">
+            <div class="background-inner" style="background-image: url('images/color-background1.png'); background-repeat: no-repeat;background-position: bottom ; background-size:auto;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-12 pt-lg-5">
+                <div class="heading-wrapper pt-lg-5">
+                    <h2 style="margin-top: 100px;" class="large-heading text-uppercase" style="color: #000;"><span>Drake</span></h2>
+                    <p>
+                        Brilliance, vibrancy, and allure.
+                    </p>
+                </div>
+            </div>
+            <div class=" col-lg-7 col-12 pt-lg-5">
+                <div class="pt-lg-5">
+                    <div class="color-variation-slider owl-carousel m-top-30">
+                        <div class="item pt-5" data-color="red">
+                            <img src="{%static 'images/redrake.webp'%}" alt="" class="img-fluid" style="width: 70%;margin-left: 95px;">
+                        </div>
+                        <div class="item mt-5" data-color="golden">
+                            <img src="{% static 'images/greendrake.png'%}" alt="" class="img-fluid" style="width: 70%;margin-left: 95px;">
+                        </div>
+                        <div class="item mt-5" data-color="gray-blue">
+                            <img src="{% static 'images/blackdrake.png'%}" alt="" class="img-fluid"style="width: 70%;margin-left: 95px;">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>     
+
+        <!-- Toggle for Electrical, Key Features, and Motor -->
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="electrical-tab" data-toggle="tab" href="#electrical" role="tab" aria-controls="electrical" aria-selected="true">Electrical</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="key-features-tab" data-toggle="tab" href="#key-features" role="tab" aria-controls="key-features" aria-selected="false">Key Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="motor-tab" data-toggle="tab" href="#motor" role="tab" aria-controls="motor" aria-selected="false">Motor/Speed/Chasis/Other Features</a>
+                    </li>
+                </ul>
+                <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="electrical" role="tabpanel" aria-labelledby="electrical-tab">
+                        <h3 style="color: #248C46;">Electrical Features</h3>
+                        <ul>
+                            <li>Speedmeter:- Digital Color</li>
+                            <li>Battery :-Lead Acid/Lithium</li>
+                            <li>Charger:-Micro Charger with Auto Cutoff</li>
+                            <li>Charging Time:- Lead 6-8 Hrs. Lithium 3-5 Hrs</li>
+                            <li>Head Light :-Led Headlamp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="key-features" role="tabpanel" aria-labelledby="key-features-tab">
+                        <h3 style="color: #248C46;">Key Features</h3>
+                        <ul>
+                            <li>Anti Theft Alarm:-Yes</li>
+                            <li>Central Locking :-Yes </li>
+                            <li>Parking Switch:-Yes</li>
+                            <li>Reverse Gear:-Yes</li>
+                            <li>USB Charger:-Yes</li>
+                            <li>Cruise Controller:-Yes</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="motor" role="tabpanel" aria-labelledby="motor-tab">
+                        <h3 style="color: #248C46;">Motor/Speed/Chasis/Other Features</h3>
+                        <ul>
+                            <li>Motor:- Highly Insulated. BLDC Motor</li>
+                            <li>Gradient:-9</li>
+                            <li>Chasis:-High Strength, Tubular Frame</li>
+                            <li>Suspension & Other Features:- Front Hydraulic Telescopic Rear Double Shocker with Dual Tube Technology</li>
+                            <li>Break System:-Disc/Drum</li>
+                            <li>Tyre :- Tubeless Tyre</li>
+                            <li>Tyre Size:- Front 12 Inch ;Rear 12/10 Inch Opt</li>
+                            <li>Weight 95 Kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><br><br>
+<!--* Variation Section end -->
+
+<!-- Image at the bottom -->
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-lg-12"> -->
+            <img src="{% static 'images/features1.jpg' %}" alt="Features Image" class="img-fluid">
+        <!-- </div> -->
+    </div>
+</div><br><br>
+
+{% endblock %}

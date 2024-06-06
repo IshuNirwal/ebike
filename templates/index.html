@@ -1,0 +1,700 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+<style>
+
+@media only screen and (max-width: 600px) {
+    .card{
+        margin-left: 70px !important;
+        margin-top: 20px;
+    }
+    .main-container .hero-section {
+        padding: 18% !important;
+    }
+    .bicycle-img .btn {
+        display: none;
+    }
+}
+    /* @keyframes moveScooty {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.bicycle-img .running-scooty {
+
+    animation: moveScooty 2.5s ; 
+} */
+
+
+
+
+</style>
+<!--* Content Section Start -->
+<div class="main-container">
+    <!--* Hero Section Start -->
+        <section id="home" class="hero-section style-1 light-text" style="padding: 23%; position: relative; height: 100%; background-color: black; background-image:  url('{% static 'images/background_final1.jpg' %}'); background-repeat: no-repeat;background-position: right; background-size: cover;">
+            <div class="container double-bottom-padding">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 banner-content bicycle-img wow fadeInLeft">
+                            <a style="top: -136%; margin-left: 74%;"class="btn btn-primary btn-accent has-icon" href="/dealer">
+                                <span>Become a Dealer</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        <!-- <h2 class="top-sub-heading">New Omaha</h2> -->
+                        <!-- <h1 class="large-heading">Smart & Connected E-Scooty</h1> -->
+                        <!-- <div class="text-block text-lead">
+                            <p>
+                                The most popular electric motorcycles include Skylark <br> 
+                                Canary and Drake.
+                            </p>
+                        </div> -->
+                        <!-- <div class="btn-wrapper">
+                            <a class="btn btn-primary btn-accent has-icon" href="/dealer">
+                                <span>Become a Dealer</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-7 col-12 px-0">               
+                        <div class="container1 wow fadeInRight d-none d-lg-block">
+                            <!-- <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>    -->
+                            <!-- <div class="hero-img">
+                                <img src="{% static 'images/hero-bike.webp'%}" alt="" class="img-fluid">           
+                            </div>    -->
+                            <!-- <span class="blink">
+                                <img src="{% static 'images/charging-image.webp'%}" alt="" class="img-fluid">
+                            </span> -->
+                        </div>          
+                        <div class="container1 wow fadeInRight d-block d-lg-none"> 
+                            <!-- <div class="hero-img">
+                                <img src="{% static 'images/hero-ebike.gif'%}" alt="" class="img-fuild">           
+                            </div>    -->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--* Hero Section End -->
+    
+    <!--* About Section Start -->
+    <section id="about" class="about-section mb-5">
+        <div class="container">
+            <div class="row align-items-center bicycle-img wow fadeInLeft">
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <img src="{% static 'images/gif.gif'%}" alt="" class="img-fluid" style="max-width: 144%;">
+                    </div>
+                </div>
+                <div class="col-md-6 about-text">
+                    <div class="heading-wrapper">
+                        <h2 class="large-heading text-uppercase"><span>About</span>OMAHA</h2>
+                    </div>
+                    <div class="text-block"style="text-align: justify;">
+                        <p>
+                            Welcome to Omaha E-Bike, your premier destination for high-quality electric bikes in Omaha. 
+                            Our mission is to revolutionize the way you commute by providing eco-friendly, efficient, and fun transportation options.
+                            
+                        </p>
+                        <p>
+                            <!-- Nestled in the heart of Adampur, Haryana, our headquarters and state-of-the-art manufacturing unit form the epicenter of our innovative pursuits. 
+                            We are dedicated to crafting battery-operated e-bikes and scooters that not only redefine the way we commute but also contribute to a healthier planet. -->
+                            At Omaha E-Bike, we believe in the power of sustainable travel. Our e-bikes are designed to offer a convenient and green alternative to traditional 
+                            transportation, helping reduce your carbon footprint while you enjoy a smooth and effortless ride.
+                        </p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="/about" class="btn btn-primary has-icon">
+                            <span>Read More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--* About Section End -->
+
+ <!-- Card Section -->
+
+ <section  class="color-section bus-layout" style="position: relative;">
+    <div class="section-background">
+        <div class="background-wrapper">
+            <div class="background-inner" style="background-image:  url('{% static 'images/color-background1.png' %}'); background-repeat: no-repeat;background-position: bottom ; background-size:auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-lg-5">
+                <div class="heading-wrapper text-center">
+                    <h2 class="large-heading text-uppercase" ><span>Smart</span>Models</h2>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;margin-left: 160px;">
+                <img class="card-img-top" src="{%static 'images/red.jpg'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Skylark</h5>
+                  <p class="card-text">Style,Efficiency and Remarkable</p>
+                  <a href="/skylark" class="btn btn-primary"style="margin-top: 19px;">View skylark</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;">
+                <img class="card-img-top" src="{%static 'images/blackplus.png'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Starling Plus</h5>
+                  <p class="card-text">Urban-Style electric scooter by Omaha, Sleek and Compact design</p>
+                  <a href="/starling" class="btn btn-primary">View starling</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;">
+                <img class="card-img-top" src="{%static 'images/greyswa.png'%}" alt="Card image cap"style="width: 83%;margin-left: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title">Swallow</h5>
+                  <p class="card-text">Sophistication, efficacy, and great comfort</p>
+                  <a href="/swallow" class="btn btn-primary"style="margin-top: 10px;">View swallow</a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4"></div>
+              <div class="col-lg-4 col-md-4"style="margin-top:50px;margin-left:114px;">
+                <a href="/models" class="btn btn-primary has-icon">
+                    <span>View All</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4"></div>
+        </div>
+    </div>
+    </section>
+
+<!--* Card Section End -->
+
+
+<!--* Features Section Start -->
+<section id="feature" class="features-section gray-bg" style="position: relative;">
+    <div class="section-background">
+        <div class="background-wrapper">
+            <div class="background-inner" style="background-image:  url('{% static 'images/feature-section.png' %}'); background-repeat: no-repeat;background-position: left; background-size:100% 100%;">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-lg-5">
+                <div class="heading-wrapper text-center">
+                    <h2 class="large-heading text-uppercase" style="color: #fff;"><span>Smart</span>Features</h2>
+                </div>
+            </div>
+            <div class="col-lg-12 col-12 mb-lg-5" style="display: flex;justify-content: end;">
+                <div class="services wow fadeInUp">
+                    <div class="">
+                        <div class="circle--slider">
+                            <div class="rotate--circle">
+                                <ul class="circle--rotate" id="circle--rotate">
+                                    <li class="block1">
+                                        <div class="icon icon1">
+                                            <img src="{% static 'images/efficient.png'%}" alt="" class="img-fluid ">
+                                            <p class="icon-text">Efficient Motor</p>
+                                        </div>
+                                    </li>
+                                    <li class="block2">
+                                        <div class="icon icon2">
+                                            <img src="{% static 'images/plug.png'%}" alt="" class="img-fluid">
+                                            <p class="icon-text">Quick Charging</p>
+                                        </div>
+                                    </li>
+                                    <li class="block3">
+                                        <div class="icon icon3">
+                                            <img src="{% static 'images/eco-energy.png'%}" alt="" class="img-fluid">
+                                            <p class="icon-text">Eco-Friendly</p>
+                                        </div>
+                                    </li>
+                                    <li class="block4">
+                                        <div class="icon icon4">
+                                            <img src="{% static 'images/shocker.png'%}" alt="" class="img-fluid">
+                                            <p class="icon-text">Hydraulic Suspension</p>
+                                        </div>
+                                    </li>
+                                    <li class="block5">
+                                        <div class="icon icon5">
+                                            <img src="{% static 'images/disc.png'%}" alt="" class="img-fluid">
+                                            <p class="icon-text">Tubeless Tyre</p>
+                                        </div>
+                                    </li>
+                                    <li class="block6">
+                                        <div class="icon icon6">
+                                            <img src="{% static 'images/sync.png'%}" alt="" class="img-fluid">
+                                            <p class="icon-text">Smartphone Integration</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="animate-wrapper">
+                                    <div class="animate animate1 ">
+                                        <div class="animate-img">
+                                            <a href="#">
+                                                <div class="animate-img__in" data-image="">
+                                                    <div class="animate-more">
+                                                        <div class="animate-title">
+                                                            <div class="p-center" id="animate1">
+                                                                <div class="d-block d-lg-none d-md-none">
+                                                                    <img src="{% static 'images/efficient.png '%}" alt="" class="mb-3 img-fluid">
+                                                                </div>
+                                                                <h4 class="text-dark">Efficient Motor</h4>
+                                                                <p class="feature-font text-dark">
+                                                                    What defines an electric bike from a conventional bicycle is its motor. An
+                                                                    electric bike motor should deliver power and value. Hence, whether you are using 
+                                                                    it to commute to work, or you want to ride rough terrain or climb hills, it should
+                                                                    let you do so effortlessly.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animate animate2">
+                                    <div class="animate-img">
+                                        <div class="animate-img__in" data-image="">
+                                            <div class="animate-more">
+                                                <div class="animate-title">
+                                                    <div class="p-center">
+                                                        <div class="d-block d-lg-none d-md-none">
+                                                            <img src="{% static 'images/plug.png'%}" alt="" class="mb-3 img-fluid">
+                                                        </div>
+                                                        <h4 class="text-dark">Quick Charging</h4>                                                                    
+                                                        <p class="feature-font text-dark">
+                                                            The good thing about electric bikes is that they can last a wide range, around 35 to 100 miles,
+                                                            before the battery running out. If there is still some charge when you plug it in, then
+                                                            it may take less time.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animate animate3">
+                                    <div class="animate-img">
+                                        <div class="animate-img__in" data-image="">
+                                            <div class="animate-more">
+                                                <div class="animate-title">
+                                                    <div class="p-center">
+                                                        <div class="d-block d-lg-none d-md-none">
+                                                            <img src="{% static 'images/eco-energy.png'%}" alt="" class="mb-3 img-fluid">
+                                                        </div>
+                                                        <h4 class="text-dark">Eco-Friendly</h4>
+                                                        <p class="feature-font text-dark">
+                                                            The average gasoline-driven car has a fuel economy of 22 miles and drives around 11,500
+                                                            miles annually. Working with these figures, they concluded that
+                                                            each car would produce 8887 grams of carbon dioxide each year.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animate animate4">
+                                    <div class="animate-img">
+                                        <div class="animate-img__in" data-image="">
+                                            <div class="animate-more">
+                                                <div class="animate-title">
+                                                    <div class="p-center">
+                                                        <div class="d-block d-lg-none d-md-none">
+                                                            <img src="{% static 'images/shocker.png'%}" alt="" class="mb-3 img-fluid">
+                                                        </div>
+                                                        <h4 class="text-dark">Hydraulic Suspension</h4>
+                                                        <p class="feature-font text-dark">
+                                                            Overall, hydraulic suspension systems are a valuable feature for e-bike riders looking to maximize comfort, 
+                                                            performance, and control, particularly in demanding off-road or high-speed riding conditions.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animate animate5">
+                                    <div class="animate-img">
+                                        <div class="animate-img__in" data-image="">
+                                            <div class="animate-more">
+                                                <div class="animate-title">
+                                                    <div class="p-center">
+                                                        <div class="d-block d-lg-none d-md-none">
+                                                            <img src="{% static 'images/disc.png'%}" alt="" class="mb-3 img-fluid">
+                                                        </div>
+                                                        <h4 class="text-dark">Tubeless Tyre</h4>
+                                                        <p class="feature-font text-dark">
+                                                            Overall, tubeless tires offer numerous benefits for e-bike riders, including increased durability, 
+                                                            improved performance, and reduced maintenance, making them an attractive option for both recreational and commuter cyclists.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="animate animate6">
+                                    <div class="animate-img">
+                                        <div class="animate-img__in" data-image="">
+                                            <div class="animate-more">
+                                                <div class="animate-title">
+                                                    <div class="p-center">
+                                                        <div class="d-block d-lg-none d-md-none">
+                                                            <img src="{% static 'images/sync.png'%}" alt="" class="mb-3 img-fluid">
+                                                        </div>
+                                                        <h4 class="text-dark">Smartphone Integration</h4>
+                                                        <p class="feature-font text-dark">
+                                                            You can easily connect your electric bike wirelessly with smartphones to include app
+                                                            capabilities like GPS, health tracking, and maps. Other apps may
+                                                            even allow you to unlock your electric bike’s integrated lock system.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--* Features Section End -->
+
+<!--* Age Section Start -->
+<section id="about" class="about-section mb-5">
+    <div class="container">
+        <div class="row align-items-center bicycle-img wow fadeInLeft">
+            <div class="col-md-6">
+                <div class="heading-wrapper">
+                    <h2 class="large-heading text-uppercase"><span>Any group age, </span>any distance</h2>
+                </div>
+                <div class="text-block"style="text-align: justify;">
+                    <p>
+                        Explore boundless possibilities with Omaha - Any Group age, Any Distance. 
+                        Our versatile electric vehicles are design for solo rides, group adventures, and everything in between.
+                        Engineered for efficiency and comfort, our commitment is to redefine your ride experience. 
+                        
+                    </p>
+                    <p>
+                        No restrictions, 
+                        no limits - just the freedom to choose your journey, irrespective of group age or distance. With Omaha, every road becomes an opportunity. 
+                        Any group age, any distance -your ride, your way.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 about-text">
+                <div class="img-wrapper">
+                    <img src="{% static 'images/blue.png'%}" alt="" class="img-fluid">
+                </div>
+               
+                
+                <!-- <div class="btn-wrapper">
+                    <a href="#" class="btn btn-primary has-icon">
+                        <span>Read More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--* Age Section End -->
+
+
+
+<!--* Enviornment impact section start -->
+<section id="impact" class="gallery-section  light-text" style="position: relative;background-image:  url('{% static 'images/env1.jpg' %}'); background-repeat: no-repeat;background-position: bottom; background-size:cover;">
+    <div class="container">
+        <div class="row" style="position: relative;">
+            <div class="my-lg-5 col-lg-6 col-md-5 col-12 bicycle-img wow fadeInLeft">
+                <div class="heading-wrapper text-left">
+                    <h2 class="large-heading text-uppercase" style="color: #fff;">
+                    <span>Enviormental</span>Impacts of<br>e-bike</h2>
+                    <p style="color: #fff;" class="mb-0 pt-3">The environmental impacts of e-bikes are generally 
+                        positive compared to conventional cars and motorcycles. Here are some key points:
+                    </p>
+                    <br>
+                    <p style="color: #fff;" class="mb-0"> 
+                        Overall, e-bikes have the potential to offer significant environmental benefits, 
+                        especially when compared to conventional cars and motorcycles.
+                    </p>
+                </div>
+            </div>
+            <div class='wrapper1 col-lg-6 col-md-7 col-12 wow fadeInUp'>
+                <div class='carousel env-carousel owl-theme d-none d-lg-block d-md-block'>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/zero-emission.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Reduced Emissions</p>
+                            <p>
+                                E-bikes produce zero tailpipe emissions, which helps improve air quality, 
+                                especially in urban areas where pollution from vehicles is a major concern. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/energy-saving.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Energy Efficiency </p>
+                            <p> E-bikes are more energy-efficient than cars and motorcycles, requiring less energy per kilometer traveled.
+                                 This can help reduce overall energy consumption and dependence on fossil fuels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/traffic-light.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Traffic Congestion</p>
+                            <p>
+                                E-bikes can help reduce traffic congestion by providing a faster and more 
+                                flexible alternative to cars, especially for short to medium distance trips.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/energy.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Lower Energy Consumption</p>
+                            <p>
+                                E-bikes consume less energy per mile traveled 
+                                compared to electric cars or motorcycles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/no-sound.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Reduced Noise Pollution</p>
+                            <p>
+                                E-bikes are quieter than cars and motorcycles, which can help reduce noise pollution in urban and residential areas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/lifestyles.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'> Materials and Manufacturing</p>
+                            <p>
+                               The production of e-bikes does require materials and energy, and there are environmental impacts associated with the manufacturing process.
+                                 However, these impacts are typically lower than those associated with car manufacturing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/long-bettery.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Battery Recycling</p>
+                            <p>
+                                The disposal of e-bike batteries is an environmental concern. However, 
+                                many e-bike batteries can be recycled, and efforts are being made to improve battery recycling processes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/peak.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Infrastructure Impact</p>
+                            <p>
+                                While e-bikes do require some infrastructure for charging and maintenance, 
+                                the impact is generally lower compared to the infrastructure required for cars and motorcycles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env_carousel__item'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/dust.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Preventing Air Pollution</p>
+                            <p>
+                                Pollution is a serious problem that plagues many cities. It causes
+                                respiratory and other problems that can be dangerous for some.
+                                e-bikes do not contribute to the pollution in the air.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class='d-block d-lg-none d-md-none'>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/zero-emission.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Reduced Emissions</p>
+                            <p>
+                                E-bikes produce zero tailpipe emissions, which helps improve air quality, 
+                                especially in urban areas where pollution from vehicles is a major concern. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/energy-saving.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Energy Efficiency </p>
+                            <p>
+                                E-bikes are more energy-efficient than cars and motorcycles, requiring less energy per kilometer traveled. 
+                                This can help reduce overall energy consumption and dependence on fossil fuels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/traffic-light.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Traffic Congestion</p>
+                            <p>
+                                E-bikes can help reduce traffic congestion by providing a faster and more 
+                                flexible alternative to cars, especially for short to medium distance trips.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/energy.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Lower Energy Consumption</p>
+                            <p>
+                                E-bikes consume less energy per mile traveled 
+                                compared to electric cars or motorcycles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/no-sound.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Reduced Noise Pollution</p>
+                            <p>
+                                E-bikes are quieter than cars and motorcycles, 
+                                which can help reduce noise pollution in urban and residential areas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/lifestyles.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'> Materials and Manufacturing</p>
+                            <p>
+                               The production of e-bikes does require materials and energy, and there are environmental impacts associated with the manufacturing process.
+                                 However, these impacts are typically lower than those associated with car manufacturing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/long-bettery.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Battery Recycling</p>
+                            <p>
+                                The disposal of e-bike batteries is an environmental concern. However, 
+                                many e-bike batteries can be recycled, and efforts are being made to improve battery recycling processes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/peak.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Infrastructure Impact</p>
+                            <p>
+                                While e-bikes do require some infrastructure for charging and maintenance, 
+                                the impact is generally lower compared to the infrastructure required for cars and motorcycles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class='env-sm mb-5'>
+                        <div class='carousel__item-head'>
+                            <img src="{% static 'images/dust.png'%}" alt="" class="img-fluid">
+                        </div>
+                        <div class='carousel__item-body'>
+                            <p class='title mb-0 head'>Preventing Air Pollution</p>
+                            <p>
+                                Pollution is a serious problem that plagues many cities. It causes
+                                respiratory and other problems that can be dangerous for some.
+                                e-bikes do not contribute to the pollution in the air.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--* Enviornment impact section end -->
+
+<section id="about" class="about-section mb-5">
+    <div class="container">
+        <div class="row align-items-center bicycle-img">
+            <div class="col-md-6 about-text"style="padding-left:20px;">
+                <div class="heading-wrapper">
+                    <h2 class="large-heading text-uppercase"><span>Omaha</span>Pioneering Sustainable
+                        Mobility</h2>
+                </div>
+                <div class="text-block"style="text-align: justify;">
+                    <p>
+                        Omaha, an Indian electric two-wheeler manufacturer, stands at the forefront of redefining sustainable mobility. 
+                        Headquartered in Adampur,Haryana, our commitment to a cleaner, greener future drives every aspect of our business.
+                        
+                    </p>
+                    <p>
+                        Omaha E-Scooty boasts an efficient electric powertrain, delivering a smooth and powerful ride with zero emissions.
+                    </p>
+                    <p>
+                        With a focus on user-friendly features, Omaha E-Scooty combines style and functionality for a seamless and enjoyable riding experience.
+                    </p>
+                    <p>
+                        Equipped with advanced battery technology, our scooters offer an impressive range on a single charge.
+                    </p>
+                    <p>
+                        Stay connected on the go with smart features that enhance your riding experience, providing convenience and control at your fingertips.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-wrapper">
+                    <img src="{% static 'images/blackplus.png'%}" alt="" class="img-fluid running-scooty" >
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+    <!--* Mobility Section End -->
+
+    
+    {%endblock%}

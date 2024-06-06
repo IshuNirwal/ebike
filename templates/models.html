@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+<style>
+  @media only screen and (max-width: 600px) {
+    .card{
+        margin-left: 70px !important;
+        margin-top: 20px;
+    }
+}
+</style>
+<!-- Card Section -->
+<br><br><br><br><br>
+<section id="variation" class="color-section bus-layout" style="position: relative;">
+    <div class="section-background">
+        <div class="background-wrapper">
+            <div class="background-inner" style="background-image:  url('{% static 'images/color-background1.png' %}'); background-repeat: no-repeat;background-position: bottom ; background-size:auto;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mb-lg-5">
+                <div class="heading-wrapper text-center">
+                    <h2 class="large-heading text-uppercase" ><span>Smart</span>Models</h2>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;margin-left: 160px;">
+                <img class="card-img-top" src="{%static 'images/red.jpg'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Skylark</h5>
+                  <p class="card-text">Style,Efficiency and Remarkable</p>
+                  <a href="/skylark" class="btn btn-primary"style="margin-top: 19px;">View skylark</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;">
+                <img class="card-img-top" src="{%static 'images/blackplus.png'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Starling Plus</h5>
+                  <p class="card-text">Urban-Style electric scooter by Omaha, Sleek and Compact design</p>
+                  <a href="/starling" class="btn btn-primary">View starling</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;">
+                <img class="card-img-top" src="{%static 'images/greyswa.png'%}" alt="Card image cap"style="width: 83%;margin-left: 20px;">
+                <div class="card-body">
+                  <h5 class="card-title">Swallow</h5>
+                  <p class="card-text">Sophistication, efficacy, and great comfort</p>
+                  <a href="/swallow" class="btn btn-primary"style="margin-top: 10px;">View swallow</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 160px;margin-top: 30px;">
+                <img class="card-img-top" src="{%static 'images/whiteScooty.png'%}" alt="Card image cap" style="width:80%;">
+                <div class="card-body">
+                  <h5 class="card-title">Canary</h5>
+                  <p class="card-text">Emboding brilliance, vitality and attractiveness</p>
+                  <a href="/canary" class="btn btn-primary"style="margin-top: 13px;">View canary</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;margin-top: 30px;">
+                <img class="card-img-top" src="{%static 'images/greeneagle.png'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Eagle</h5>
+                  <p class="card-text">Urban-Style electric scooter by Omaha, Sleek and Compact design</p>
+                  <a href="/eagle" class="btn btn-primary">View eagle</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;margin-left: 70px;margin-top: 30px;">
+                <img class="card-img-top" src="{%static 'images/redrake.webp'%}" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Drake</h5>
+                  <p class="card-text">Brilliance, vibrancy, and allure</p>
+                  <a href="/drake" class="btn btn-primary"style="margin-top: 39px;">View drake</a>
+                </div>
+              </div>
+             
+        </div>
+    </div>
+    </section><br><br>
+
+<!--* Card Section End -->
+
+{% endblock %}

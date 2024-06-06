@@ -1,0 +1,81 @@
+{% load static %}
+<style>
+    @media only screen and (max-width: 600px) {
+        .regular-logo {
+            width: 15% !important;
+        }
+    }
+
+
+    /* Add this CSS for the fixed header */
+    .fixed-header {
+    position: fixed !important;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    background: rgba(255, 255, 255, 1) !important;
+    z-index: 1000!important; 
+    transition: background-color 0.3s ease; 
+}
+
+/* Add hover effect */
+.fixed-header:hover {
+    background-color: rgba(200, 200, 200, 1) !important; /* Change background color on hover */
+}
+
+</style>
+    <!--* Preloader start -->
+    <div id="st-preloader">
+        <div class="st-preloader-wave img-fluid"><img src="{% static 'images/st-loader.png'%}" alt="preloader"></div>
+    </div>
+    <!--* preloader end -->
+    <!--* Main Wrapper Start-->
+    <div class="wrapper" id="top">
+    <!--* Header Start -->
+        <header class="main-header menu-absolute transparent light-header">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 logo">
+                        <a href="/" title="Wheels Bicycle">
+                            <img class="regular-logo img-fluid" src="{% static 'images/omaha_logo.png'%}" alt="bicycle">
+                            <img class="sticky-logo img-fluid" src="{% static 'images/omaha_logo.png'%}" alt="bicycle" >
+                        </a>
+                        <div class="menu-icon">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 menu-conainer">
+                        <nav class="site-navigation">
+                            <ul class="main-menu">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/models">Models</a></li>
+                                <li><a href="/dealer">Become A Dealer</a></li>
+                                <li><a href="/contact">Get in Touch</a></li>
+                            </ul>
+                            <!-- <ul class="header-social-media">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul> -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('.main-header');
+                if (window.scrollY > 0) {
+                    header.classList.add('fixed-header');
+                } else {
+                    header.classList.remove('fixed-header');
+                }
+            });
+        </script>
+        
+    <!--* Header End-->    

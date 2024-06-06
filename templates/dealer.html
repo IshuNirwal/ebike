@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% block content%}
+{% load static %}
+
+<div>
+ 
+ <!--* Dealer Section start -->
+ <section id="dealer" class="dealer-section light-gray-bg" style="margin-top: 90px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <div class="col-lg-4">
+                    <h2 style="margin-top: 35px; margin-left: -20px; margin-bottom: 33px;">Become A Dealer</h2>
+                </div>
+                <form method="post" action="{% url 'dealer' %}" style="position: relative;">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">City:</label>
+                        <input type="text" id="city" name="city" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Pin Code:</label>
+                        <input type="number" id="pincode" name="pincode" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">State:</label>
+                        <input type="text" id="state" name="state" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Current Business:</label>
+                        <input type="text" id="business" name="business" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Firm Name:</label>
+                        <input type="text" id="firm_name" name="firm_name" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">GST NO:</label>
+                        <input type="text" id="gst" name="gst" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message:</label>
+                        <input type="text" id="message" name="message" class="form-control" style="width: 100%;">
+                    </div>
+                    <div class="form-group" style="margin: 40px;">
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+            <br><br>
+                <!-- <div class="col-lg-4">
+                    <h2 style=" margin-top: 50px;">Find Dealer Near You</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="form-row">
+                        <div class="col-lg-4 col-sm-6">
+                            <select style="    margin-top: 50px;" name="country" class="form-control">
+                                <option value="">Select Country</option>
+                                <option value="Country 1">India</option>
+                                <!- <option value="Country 2">Country 2</option>
+                                <option value="Country 3">Country 3</option>
+                                <option value="Country 4">Country 4</option>
+                                <option value="Country 5">Country 5</option> -->
+                            <!-- </select>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <select style="    margin-top: 50px;" name="city" class="form-control">
+                                <option value="">Select City</option>
+                                <option value="city 1">City 1</option>
+                                <option value="city 2">City 2</option>
+                                <option value="city 3">City 3</option>
+                                <option value="city 4">City 4</option>
+                                <option value="city 5">City 5</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <input style="    margin-top: 50px;" type="submit" class="btn fw" value="Submit">
+                        </div>
+                    </div>
+                </div> --> 
+            </div>
+        </div>
+    </section>
+
+<!--* Dealer Section end -->
+
+{%endblock%}
